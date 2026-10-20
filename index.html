@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <label>Enter number of a</label>
+    <input type="text" name="fno" id="fno" />
+    <label>Enter number of b</label>
+    <input type="text" name="sno" id="sno" />
+    <input type="button" name="swap" id="swap" value="swap" onclick="swapno()"/>
+    <label>After swap</label>
+    <label>a</label>
+    <input type="text" name="no" id="no" readonly />
+    <label>b</label>
+    <input type="text" name="no" id="ffno" readonly />
+    <script>
+        function swapno() {
+            var n1 = document.getElementById("fno").value;
+            var n2 = document.getElementById("sno").value;
+            document.getElementById("no").value = n2;
+            document.getElementById("ffno").value = n1;
+            
+
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

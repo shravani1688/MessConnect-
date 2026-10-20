@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>My Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .header {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .menu {
+            background: #1565c0;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: yellow;
+        }
+
+        .content {
+            min-height: 400px;
+            padding: 20px;
+            background: white;
+        }
+
+        .footer {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+
+<form id="form1" runat="server">
+
+    <div class="header">
+        <h1>My Website</h1>
+        <p>ASP.NET Web Forms Master Page</p>
+    </div>
+
+    <div class="menu">
+        <a href="Home.aspx">Home</a>
+        <a href="About.aspx">About</a>
+    </div>
+
+    <div class="content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div class="footer">
+        © 2026 My Website | All Rights Reserved
+    </div>
+
+</form>
+
+</body>
+</html>

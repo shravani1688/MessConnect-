@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Role</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI',sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #e5e7eb;
+        }
+
+        .phone {
+            width: 360px;
+            height: 740px;
+            background: #f9fafb;
+            border-radius: 35px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+            padding: 25px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #111827;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #6b7280;
+            margin-top: 8px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 22px;
+            overflow: hidden;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            cursor: pointer;
+        }
+
+            .card img {
+                width: 100%;
+                height: 170px;
+                object-fit: cover;
+            }
+
+        .content {
+            padding: 18px;
+        }
+
+            .content h2 {
+                color: #111827;
+            }
+
+            .content p {
+                color: #6b7280;
+                margin-top: 8px;
+            }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 12px;
+            background: #16a34a;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="phone">
+
+        <h1>Select Role</h1>
+        <div class="subtitle">Choose how you want to continue</div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+            <div class="content">
+                <h2>Student</h2>
+                <p>Find and book the best mess near you.</p>
+                <button>Select</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d">
+            <div class="content">
+                <h2>Mess Owner</h2>
+                <p>Manage your mess and bookings easily.</p>
+                <button>Select</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
